@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: lightblue;
+    padding: 15px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 5%;
+}
+
+#toggleButton {
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    margin-right: 5%;
+}
+
+#toggleButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+#toggleButton:active {
+    background-color: #004085; /* Even darker blue when clicked */
+    transform: translateY(0); /* Return to original position when clicked */
+}
+
+
+
+#sidebar {
+    position: fixed;
+    top: 70px; /* adjust based on header height */
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    margin-top: 100px; /* adjust based on header height */
+    padding: 20px;
+    background-image: url(pink-tulips.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+
+
+p {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Add a light border */
+}
+
